@@ -1,0 +1,51 @@
+ Hassan Akbar
+ CISC 3130
+ Professor Chuang
+ HW 1
+
+Printed Linked List in Alphabetical Order
+Number of Songs Read in: 50 
+Number of Artists Read in: 39 
+Total Views: 996899107 
+
+Artist Name               Times Appeared            Total Views               
+Anuel AA                  1                         11911525                 
+Arizona Zervas            1                         32102084                 
+Bad Bunny                 1                         14898265                 
+Billie Eilish             2                         38191345                 
+blackbear                 1                         15114079                 
+BROCKHAMPTON              1                         11904637                 
+BTS                       1                         18424710                 
+Camila Cabello            1                         16246433                 
+DaBaby                    1                         14163167                 
+Dalex                     1                         12526399                 
+Dimelo Flow               1                         15207363                 
+Doja Cat                  1                         12325839                 
+Don Toliver               1                         13281093                 
+Dua Lipa                  1                         28228768                 
+Ed Sheeran                1                         11679460                 
+Eminem                    6                         114396666                
+Future                    1                         34200687                 
+Halsey                    1                         19736651                 
+Harry Styles              2                         28936520                 
+Jonas Brothers            1                         15362782                 
+Justin Bieber             1                         34586419                 
+KAROL G                   1                         41434019                 
+Lewis Capaldi             2                         33517377                 
+Mac Miller                3                         46272182                 
+Maroon 5                  1                         24516744                 
+MEDUZA                    1                         12332126                 
+Post Malone               1                         23997809                 
+Rauw Alejandro            1                         12612009                 
+Regard                    1                         14011559                 
+Roddy Ricch               1                         48937592                 
+Selena Gomez              2                         35238324                 
+Shawn Mendes              1                         19265338                 
+The Black Eyed Peas       1                         21103190                 
+The Weeknd                1                         33551309                 
+Tones and I               1                         50409214                 
+Travis Scott              1                         11867232                 
+Trevor Daniel             1                         28606316                 
+Tyga                      1                         11820301                 
+YNW Melly                 1                         13981574                 
+
