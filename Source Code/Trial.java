@@ -30,7 +30,7 @@ public class Trial {
    
    int songLimit = 50;
    // can be increased
-   // could be removed but would then need to read the data first to see ehat
+   // could be removed but would then need to read the data first to see what
    // size array to make
    // arraylist of artist objects that have track objects would be more ideal
    // an arraylist can also grow and shrink
