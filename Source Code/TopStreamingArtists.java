@@ -9,11 +9,11 @@
 
  class TopStreamingArtists {
   
-    private Artist first;
-    private Artist last;
-    private int count;
-    private int songsRead;
-    private int totalViews;
+    private Artist first; // first artist in the list
+    private Artist last; // last artist in the list
+    private int count; // number of artists in the list
+    private int songsRead; // number of songs read in
+    private int totalViews; // total views of all artists
     
 //*********************************************************************************  
     
@@ -95,7 +95,7 @@
     // Create the new node
     Artist add = new Artist(name, num, v);
     if( isEmpty() ) {
-      last = add;
+      last = add; // sets first artist as first and last
       first = add;
       count++;
       
@@ -104,13 +104,13 @@
       
     } else{
      
-      last.next = add;
-      add.prev = last;
-      last = add;
-      count++;
+      last.next = add; // makes the last object's next point to the one to be added
+      add.prev = last; // makes the new objects previous point to the last
+      last = add; // makes last point to the one to be added
+      count++; // increments artist count
       
-      songsRead = songsRead + add.timesAppeared;
-      totalViews = totalViews + add.artistViews;
+      songsRead = songsRead + add.timesAppeared; // increases songs read in
+      totalViews = totalViews + add.artistViews; // increases total views
       
     }
   
@@ -179,7 +179,7 @@
   * Input:
   *    None
   * Process:
-  *    Creates a String of the linked list
+  *    Creates a formated String of the linked list
   * Output:
   *    None
   */       
@@ -201,7 +201,7 @@
     
    
    
-    str2 =  String.format("%n");
+    str2 =  String.format("%n"); // new line
     str = str + str2;
     
    
@@ -222,7 +222,7 @@
      while(current != null) {
      
      
-      //    for (int index = 0; index < count; index++){} // alternate loop
+      //    for (int index = 0; index < count; index++){} // alternate loop using count
        
       str2 =  current.toString();
       str = str + str2;
@@ -231,7 +231,7 @@
       str = str + str2;
     
       
-       current = current.next;
+      current = current.next;
        
      }
     

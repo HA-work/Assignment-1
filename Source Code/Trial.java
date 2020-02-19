@@ -108,6 +108,7 @@ public class Trial {
       // checking if the artist name is repeated
       // could be done seperately but probably better to search while making 
       // the array 
+      // if repeated we increase the times appeared and add to the views
      
       if (myList[index][0].equals(artistName)){
        
@@ -218,18 +219,18 @@ public class Trial {
           
         if (myList[j+1][0].compareToIgnoreCase(myList[j][0]) < 0) { // ignore case
             
-          temp1 = myList[j+1][0];
-          temp2 = myList[j+1][1];
-          temp3 = myList[j+1][2];
+          temp1 = myList[j+1][0]; // save temp name
+          temp2 = myList[j+1][1]; // save temp times appeared
+          temp3 = myList[j+1][2]; // save temp views
             
             
-          myList[j+1][0] = myList[j][0];
-          myList[j+1][1] = myList[j][1];
-          myList[j+1][2] = myList[j][2];
+          myList[j+1][0] = myList[j][0]; // copy one name to the other
+          myList[j+1][1] = myList[j][1]; // copy one times appeared to the other
+          myList[j+1][2] = myList[j][2]; // copy view to the other
               
-          myList[j][0] = temp1;
-          myList[j][1] = temp2;
-          myList[j][2] = temp3;
+          myList[j][0] = temp1; // use temp to set name
+          myList[j][1] = temp2; // use temp to set times
+          myList[j][2] = temp3; // use temp to set views
               
         }
         

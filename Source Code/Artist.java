@@ -9,9 +9,9 @@
 
  class Artist {
   
-    private String name;
-    public Artist next;
-    public Artist prev;
+    private String name; // artist name
+    public Artist next; // next artist in the list
+    public Artist prev; // previous artist in the list
     public int timesAppeared; // could be String but int is better
     public int artistViews;
     
@@ -61,13 +61,13 @@
    
     public Artist(String n, String num, String v){
       
-      name = n;
+      name = n; // set artist name
      
-      timesAppeared = Integer.parseInt(num);
-      artistViews = Integer.parseInt(v);
+      timesAppeared = Integer.parseInt(num); // set artist times appeared need to parse the Sting
+      artistViews = Integer.parseInt(v); // set the number of views need to parse the String
      
-      next = null;
-      prev = null;
+      next = null; // set next to null
+      prev = null; // set prev to null
      
     }
     
@@ -81,7 +81,7 @@
   * Process:
   *    makes a formatted string
   * Output:
-  *    Returns a formated string of the Artist object
+  *    Returns a formated string of the Artist object for printing
   */
  //toString() method - uses String static method .format()
  public String toString() {
