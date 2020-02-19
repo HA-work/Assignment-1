@@ -35,6 +35,8 @@ public class Trial {
    // arraylist of artist objects that have track objects would be more ideal
    // an arraylist can also grow and shrink
    // can also just set a high songLimit
+   // after 50 there is a name with , comma in it
+   // this makes splitting a problem
    
    int cols = 3;  //  name, appears, views data members
    int rows = songLimit; // artist records
