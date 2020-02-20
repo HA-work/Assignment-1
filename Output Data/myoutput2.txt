@@ -4,9 +4,9 @@
  HW 1
 
 Printed Linked List in Alphabetical Order
-Number of Songs Read in: 50 
-Number of Artists Read in: 39 
-Total Views: 996899107 
+Number of Songs Read in: 81 
+Number of Artists Read in: 52 
+Total Views: 1295413207 
 
 Artist Name               Times Appeared            Total Views               
 Anuel AA                  1                         11911525                 
@@ -23,29 +23,42 @@ Dimelo Flow               1                         15207363
 Doja Cat                  1                         12325839                 
 Don Toliver               1                         13281093                 
 Dua Lipa                  1                         28228768                 
-Ed Sheeran                1                         11679460                 
-Eminem                    6                         114396666                
+Ed Sheeran                3                         31918506                 
+Eminem                    12                        173818702                
 Future                    1                         34200687                 
-Halsey                    1                         19736651                 
+Halsey                    2                         28621523                 
 Harry Styles              2                         28936520                 
+J Balvin                  2                         20017200                 
+Jhay Cortez               1                         8825480                  
 Jonas Brothers            1                         15362782                 
+JP Saxe                   1                         9600536                  
+Juice WRLD                2                         21523397                 
+Juju                      1                         9118365                  
 Justin Bieber             1                         34586419                 
 KAROL G                   1                         41434019                 
+Khalid                    1                         9835375                  
 Lewis Capaldi             2                         33517377                 
-Mac Miller                3                         46272182                 
+Lil Uzi Vert              1                         10699707                 
+Mac Miller                6                         75324491                 
 Maroon 5                  1                         24516744                 
 MEDUZA                    1                         12332126                 
-Post Malone               1                         23997809                 
+Mustard                   1                         11242147                 
+Nicky Jam                 2                         19783807                 
+Post Malone               2                         35657055                 
 Rauw Alejandro            1                         12612009                 
 Regard                    1                         14011559                 
-Roddy Ricch               1                         48937592                 
+Roddy Ricch               2                         48937600                 
+SAINt JHN                 1                         10422551                 
 Selena Gomez              2                         35238324                 
+SHAED                     1                         8918528                  
+Shakira                   1                         11157044                 
 Shawn Mendes              1                         19265338                 
 The Black Eyed Peas       1                         21103190                 
-The Weeknd                1                         33551309                 
+The Weeknd                2                         42533979                 
 Tones and I               1                         50409214                 
 Travis Scott              1                         11867232                 
 Trevor Daniel             1                         28606316                 
 Tyga                      1                         11820301                 
+Y2K                       1                         9129776                  
 YNW Melly                 1                         13981574                 
 

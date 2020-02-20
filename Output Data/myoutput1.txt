@@ -3,27 +3,28 @@
  Professor Chuang
  HW 1
 
-Number of Songs Read in: 50
-Number of Artists Read in: 39
-Total Views: 996899107
+Number of Songs Read in: 500
+Number of Artists Read in: 52
+Total Views: 1295413207
+Number of Errors: 1
 
 Artist Name               Times Appeared            Views                    
 Tones and I               1                         50409214                 
-Roddy Ricch               1                         48937592                 
+Roddy Ricch               2                         48937600                 
 KAROL G                   1                         41434019                 
-Eminem                    6                         114396666                
+Eminem                    12                        173818702                
 Justin Bieber             1                         34586419                 
 Future                    1                         34200687                 
-The Weeknd                1                         33551309                 
+The Weeknd                2                         42533979                 
 Arizona Zervas            1                         32102084                 
 Trevor Daniel             1                         28606316                 
 Dua Lipa                  1                         28228768                 
 Maroon 5                  1                         24516744                 
-Post Malone               1                         23997809                 
+Post Malone               2                         35657055                 
 Billie Eilish             2                         38191345                 
-Mac Miller                3                         46272182                 
+Mac Miller                6                         75324491                 
 The Black Eyed Peas       1                         21103190                 
-Halsey                    1                         19736651                 
+Halsey                    2                         28621523                 
 Lewis Capaldi             2                         33517377                 
 Shawn Mendes              1                         19265338                 
 BTS                       1                         18424710                 
@@ -46,4 +47,17 @@ Anuel AA                  1                         11911525
 BROCKHAMPTON              1                         11904637                 
 Travis Scott              1                         11867232                 
 Tyga                      1                         11820301                 
-Ed Sheeran                1                         11679460                 
+Ed Sheeran                3                         31918506                 
+Juice WRLD                2                         21523397                 
+Mustard                   1                         11242147                 
+Shakira                   1                         11157044                 
+J Balvin                  2                         20017200                 
+Lil Uzi Vert              1                         10699707                 
+SAINt JHN                 1                         10422551                 
+Nicky Jam                 2                         19783807                 
+Khalid                    1                         9835375                  
+JP Saxe                   1                         9600536                  
+Y2K                       1                         9129776                  
+Juju                      1                         9118365                  
+SHAED                     1                         8918528                  
+Jhay Cortez               1                         8825480                  
