@@ -80,7 +80,8 @@ public class Trial {
    errorFile.println(" HW 1");
    errorFile.println();
      
-     
+   // maybe add a way to check if the errors in the file have been corrected
+   
    errorFile.println("List of errors and line they appear on" );
      
    errorFile.println();
