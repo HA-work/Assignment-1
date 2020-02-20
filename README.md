@@ -7,3 +7,5 @@ The file called Trial.java has the Main Class.
 There are 2 output files.
 The first has the unsorted artist list.
 The second has the sorted artist list.
+
+There is also an error file that stores any prolem entries.
