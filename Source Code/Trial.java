@@ -28,7 +28,7 @@ public class Trial {
    // with the array list
    
    // there is a problem with the scanner size
-   // should try a buffered reader to get around this
+   // added a parameter to the scanner creation to fix this
    
    int songLimit = 500;
    // can be increased
@@ -37,12 +37,11 @@ public class Trial {
    // arraylist of artist objects that have track objects would be more ideal
    // an arraylist can also grow and shrink
    // can also just set a high songLimit
-   // after 50 there is a name with , comma in it
+   // after 50 there are names and songs with , comma in it
    // this makes splitting a problem
    // array size set to 500
    // this is greater than the expected value and ensures that there is enough space
    // an arraylist would be better as it can grow or shrink
-   // the array is also not properly filled because of the scanner limitation
    
    int cols = 3;  //  name, appears, views data members
    int rows = songLimit; // artist records
@@ -61,13 +60,7 @@ public class Trial {
    // could be made a method
    // this makes it easier to keep track of counts because we are using an array though
    // could make a method that returns an object with the relevant data though
-   
-   // data stops being read in at line 81
-   // this is because the scanner object has a character limit
-   // should try to use buffered reader to get around this
-   
-   
-   
+  
    
    // error file
    // will have any errors
@@ -80,7 +73,8 @@ public class Trial {
    errorFile.println(" HW 1");
    errorFile.println();
      
-   // maybe add a way to check if the errors in the file have been corrected
+   // maybe add a way to check if the errors in the file have been corrected  
+   // someone would need to manually remove the extra commas
    
    errorFile.println("List of errors and line they appear on" );
      
@@ -93,7 +87,9 @@ public class Trial {
    // a normal array makes this difficult
 
    //create Scanner object
-   Scanner sc = new Scanner(inFile);
+   Scanner sc = new Scanner(inFile, "UTF-8");
+   // fixed the scanner problem by adding "UTF-8" to the creation of the scanner object
+   // this increases the character limit of the scanner
        
    String line;
      
@@ -112,7 +108,6 @@ public class Trial {
      // could just be hasNext
      // used song limit as well so we dont have a potential problem
      // an arraylist would avoid this
-     // the scanner can only handel upto 80 entries though
       
      //read next line of data 
      line = sc.nextLine();
@@ -130,6 +125,7 @@ public class Trial {
      // if length is gretater > that 5 there is a problem
      // could skip this entry
      // not sure how to fix it without actually seeing where the problem is
+     // errors are placed into a file
      
      
      
@@ -143,18 +139,18 @@ public class Trial {
            
         problemEntries++;
         
-        errorFile.println("Error on Line Number : " + lineCount );
-        
+        errorFile.println("Error Number: " + problemEntries  );
+        errorFile.println("Error on Line Number : " + lineCount);
         
         errorFile.println(line);
+        errorFile.println();
         line = sc.nextLine();
         tokens = line.split(",");
         // checks if a problem occurs
         // skips the problem
         // needs a has next
         // need to watch out for the end of the file
-        // error at entry 67
-        // for some reason stops at entry 81
+        // error at entry 67 and others
         // could save the errors to an array
         // this way the error file can have statistics at the top instead of the bottom
         // decided to print immediately though
@@ -352,6 +348,8 @@ public class Trial {
 //*********************************************************************************     
     // print linked list
     // printing to a different file than the unsorted array
+    // the linked list has no knowledge of the errors
+    // maybe make a way to pass that info on
      
    
     PrintWriter outFile2 = new PrintWriter("myoutput2.txt");   // file
