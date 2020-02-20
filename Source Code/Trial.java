@@ -27,7 +27,10 @@ public class Trial {
    // an arraylist would fix this aswell by making an object
    // with the array list
    
-   int songLimit = 50;
+   // there is a problem with the scanner size
+   // should try a buffered reader to get around this
+   
+   int songLimit = 500;
    // can be increased
    // could be removed but would then need to read the data first to see what
    // size array to make
@@ -36,6 +39,10 @@ public class Trial {
    // can also just set a high songLimit
    // after 50 there is a name with , comma in it
    // this makes splitting a problem
+   // array size set to 500
+   // this is greater than the expected value and ensures that there is enough space
+   // an arraylist would be better as it can grow or shrink
+   // the array is also not properly filled because of the scanner limitation
    
    int cols = 3;  //  name, appears, views data members
    int rows = songLimit; // artist records
@@ -54,6 +61,31 @@ public class Trial {
    // could be made a method
    // this makes it easier to keep track of counts because we are using an array though
    // could make a method that returns an object with the relevant data though
+   
+   // data stops being read in at line 81
+   // this is because the scanner object has a character limit
+   // should try to use buffered reader to get around this
+   
+   
+   
+   
+   // error file
+   // will have any errors
+   
+   PrintWriter errorFile = new PrintWriter("errors.txt");   // file
+    
+   errorFile.println(" Hassan Akbar"); 
+   errorFile.println(" CISC 3130");
+   errorFile.println(" Professor Chuang");
+   errorFile.println(" HW 1");
+   errorFile.println();
+     
+     
+   errorFile.println("List of errors and line they appear on" );
+     
+   errorFile.println();
+   
+   // Inputfile
    File inFile = new File("input.txt");
      
    // reading input in main so it is easier to count the artists and songs
@@ -71,9 +103,15 @@ public class Trial {
    int count = 0;  // number of songs read in
    int artistCount = 0; // number of artists read in
    int totalViews = 0;
+   int problemEntries = 0;
+   int lineCount = 3; // 3 as we skipped the first two lines
    
      
    while (sc.hasNext() && count < songLimit ) {
+     // could just be hasNext
+     // used song limit as well so we dont have a potential problem
+     // an arraylist would avoid this
+     // the scanner can only handel upto 80 entries though
       
      //read next line of data 
      line = sc.nextLine();
@@ -91,6 +129,45 @@ public class Trial {
      // if length is gretater > that 5 there is a problem
      // could skip this entry
      // not sure how to fix it without actually seeing where the problem is
+     
+     
+     
+     // search for the error
+     
+     if (tokens.length > 5){
+       
+       do {
+         
+         
+           
+        problemEntries++;
+        
+        errorFile.println("Error on Line Number : " + lineCount );
+        
+        
+        errorFile.println(line);
+        line = sc.nextLine();
+        tokens = line.split(",");
+        // checks if a problem occurs
+        // skips the problem
+        // needs a has next
+        // need to watch out for the end of the file
+        // error at entry 67
+        // for some reason stops at entry 81
+        // could save the errors to an array
+        // this way the error file can have statistics at the top instead of the bottom
+        // decided to print immediately though
+         
+         
+         
+       } while (tokens.length > 5);
+     
+     
+      
+       
+     }
+     
+     
    
      String artistName = tokens[2];
    
@@ -138,12 +215,23 @@ public class Trial {
     }
    
     count++;// song count up
+    lineCount++;
    
  
    }
      
      
    sc.close();
+   
+   
+   
+   errorFile.println();
+   errorFile.println("Number of Errors: " + problemEntries);
+   
+   
+   errorFile.flush();
+   errorFile.close();
+   
    
 //*********************************************************************************        
    // print initial array
@@ -171,6 +259,8 @@ public class Trial {
    outFile.println("Number of Artists Read in: " + artistCount);
      
    outFile.println("Total Views: " + totalViews);
+   
+   outFile.println("Number of Errors: " + problemEntries);
      
    outFile.println();
      
@@ -295,9 +385,3 @@ public class Trial {
 //*********************************************************************************
  
 }
-
-
-
-
-
- 
