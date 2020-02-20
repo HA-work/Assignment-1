@@ -3,7 +3,7 @@
  Professor Chuang
  HW 1
 
-Number of Songs Read in: 500
+Number of Songs Read in: 81
 Number of Artists Read in: 52
 Total Views: 1295413207
 Number of Errors: 1
