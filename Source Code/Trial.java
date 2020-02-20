@@ -261,7 +261,7 @@ public class Trial {
      
    outFile.println();
      
-   outFile.printf("%-25s %-25s %-25s", "Artist Name","Times Appeared","Views");
+   outFile.printf("%-25s %-25s %-25s", "Artist Name","Times Appeared","Artist Views");
      
    outFile.println();
    // done to artist limit so null is not printed

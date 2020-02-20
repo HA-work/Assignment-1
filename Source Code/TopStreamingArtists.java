@@ -207,7 +207,7 @@
   
   
      
-    str2 = String.format("%-25s %-25s %-25s %n","Artist Name","Times Appeared","Total Views");
+    str2 = String.format("%-25s %-25s %-25s %n","Artist Name","Times Appeared","Artist Views");
      
     str = str + str2;
      
