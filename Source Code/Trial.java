@@ -100,14 +100,14 @@ public class Trial {
    line = sc.nextLine(); // skip unneeded line
    // 3rd line is where the data starts
      
-   int count = 0;  // number of songs read in
    int artistCount = 0; // number of artists read in
    int totalViews = 0;
    int problemEntries = 0;
    int lineCount = 3; // 3 as we skipped the first two lines
+   int songCount = 0; // number of songs read in
    
      
-   while (sc.hasNext() && count < songLimit ) {
+   while (sc.hasNext() && songCount < songLimit ) {
      // could just be hasNext
      // used song limit as well so we dont have a potential problem
      // an arraylist would avoid this
@@ -214,8 +214,8 @@ public class Trial {
      
     }
    
-    count++;// song count up
     lineCount++;
+    songCount++; // song count up
    
  
    }
@@ -254,7 +254,7 @@ public class Trial {
    outFile.println();
      
      
-   outFile.println("Number of Songs Read in: " + songLimit);
+   outFile.println("Number of Songs Read in: " + songCount);
      
    outFile.println("Number of Artists Read in: " + artistCount);
      
