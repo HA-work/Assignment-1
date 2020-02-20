@@ -8,7 +8,7 @@ Number of Artists Read in: 105
 Total Views: 2037432138
 Number of Errors: 7
 
-Artist Name               Times Appeared            Views                    
+Artist Name               Times Appeared            Artist Views             
 Tones and I               2                         56968546                 
 Roddy Ricch               2                         57681276                 
 KAROL G                   1                         41434019                 
