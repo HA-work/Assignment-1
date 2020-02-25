@@ -145,6 +145,7 @@ public class Trial {
         errorFile.println(line);
         errorFile.println();
         line = sc.nextLine();
+        lineCount++; // increase line count
         tokens = line.split(",");
         // checks if a problem occurs
         // skips the problem
@@ -155,7 +156,7 @@ public class Trial {
         // this way the error file can have statistics at the top instead of the bottom
         // decided to print immediately though
          
-         
+        // could use a better way to skip
          
        } while (tokens.length > 5);
      
